@@ -1,6 +1,7 @@
-version '3'
 services:
- web:
-  build: .
-  ports:
-   - "8080:8000"
+  web:
+    build: .
+    container_name: simple-python-app
+    ports:
+      - "8000:8000"
+    restart: always
